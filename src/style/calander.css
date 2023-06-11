@@ -1,0 +1,269 @@
+.calander {
+    background-color: #F5F5F5;
+    overflow: hidden;
+    scroll-margin-top:100px ;
+}
+.calander .container {
+    position: relative;
+}
+.arrow-right,.arrow-left {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #21272A;
+    cursor: pointer;
+    z-index: 3;
+}
+.arrow-right:hover,.arrow-left:hover {
+    transform: translateY(-50%) scale(1.05);
+}
+.arrow-left {
+    left: 15px;
+}
+.arrow-right {
+    right:  15px;
+}
+.card-slider {
+   overflow: hidden;
+}
+.card-slider .slider {
+    position: relative;
+    display: flex;
+    column-gap: 100px;
+    width: 100%;
+    transition: all 1s ease;
+}
+.card-slider .card {
+    position: absolute;
+    left: 0px;
+    width: 600px;
+    margin: 100px 100px 100px 100px;
+    background-color: #E8E8E8;
+    padding: 30px 60px;
+    position: relative;
+}
+@media(max-width:900px) {
+    .card-slider .card {
+        margin: 100px 35px;
+    }
+}
+.card-slider .card .match-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top:-40px;
+    left: 0;
+}
+.card-slider .card .match-date .date {
+    display: flex;
+    color:#667080;
+    font-size: 12px;
+}
+.card-slider .card .match-date .date .day {
+    padding-right: 10px;
+}
+.suffix {
+    font-size: 8px;
+}
+.card-slider .card .match-date .status {
+    font-weight: 500;
+    color: #151515;
+    font-size: 14px;
+}
+.card-slider .card .body {
+    height: 226px;
+}
+.card-slider .card .body .stad {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: #5C5C5C;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+}
+.card-slider .card .body .result {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-slider .card .body .result span {
+    color: #5C5C5C;
+    font-size: 32px;
+    font-weight: 600;
+}
+.card-slider .card .body .result span.lin {
+    width: 20px;
+    height: 3px;
+    background-color: #5C5C5C;
+    border: 3px solid #5C5C5C;
+    margin: -40px 0 0;
+}
+.card-slider .card .body .result span.score {
+    padding: 0 40px;
+    margin-top: -40px;
+}
+.card-slider .card .body .result .guest , .card-slider .card .body .result .host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+.card-slider .card .body .result span.team {
+    font-size: 14px;
+    color: #8A8A8A;
+    opacity: 0.5;
+}
+.card-slider .card .body .result img {
+    width: 60px;
+    padding-bottom: 25px;
+}
+.card-slider .card .details {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+.card-slider .card .details .championship {
+    text-align: left;
+    padding: 17px 100px 12px 31px ;
+    background-color: #8A8A8A;
+    font-size: 16px;
+    color: #F8F8F8;
+    font-weight: 600;
+    width: 300px;
+}
+.card-slider .card .details .more-details {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #21272A;
+    width: 150px;
+    padding: 17px;
+}
+.coming {
+    background-color: white !important;
+}
+.coming .score {
+    padding: 0 86.1px !important;
+}
+.coming .championship {
+    background-color: #B9B9B9 !important;
+}
+.coming .more-details {
+    background-color: #D07979 !important;
+}
+
+
+/* previuos card */
+
+
+.pre-header {
+    text-align: center;
+    background-color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 0;
+    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
+}
+.pre-cont {
+    height: 280px;
+    transition: all .7s ease;
+    width: 100%;
+}
+.pre-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 60px;
+}
+@media(max-width:900px) {
+    .pre-card {
+        padding: 35px 20px;
+    }
+}
+.pre-card .champ-date  .championship{
+    color: #667080;
+    font-weight: 600;
+    font-size: 14px;
+}
+.pre-card .champ-date .date {
+    display: flex;
+    justify-content: space-between;
+    color: #8A8A8A;
+    font-weight: 600;
+    font-size: 12px;
+}
+.pre-card .flags img {
+    width: 45px;
+}
+.pre-card .flags img.top {
+    margin-left: -10px;
+}
+.pre-card .result .geust , .pre-card .result .host {
+    display: flex;
+    width:100px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: #667080;
+}
+.pre-card .result .geust {
+    padding: 0 0 12px;
+}
+.syr {
+    color: #D07979 !important;
+}
+.pre-card .story {
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    padding: 0px 28px;
+    height: 40px;
+    background-color: #B9B9B9;
+    border: none;
+}
+hr {
+    position: relative;
+    left: -60px;
+    width: 120%;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.47);
+    background-color: #8A8A8A;
+    opacity: 50%;
+}
+.pre-foot {
+    height: 52px ;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 100px 0px rgb(105, 105, 105, 0.753) , 0 40px 10px rgba(0, 0, 0, 0.656);
+    position: relative;
+    transition: all 1s ease;
+}
+.pre-foot .arrow {
+    position: absolute;
+    left: 50%;
+    top: -22px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.297);
+    cursor: pointer;
+    z-index: 1;
+}
+.pre-foot .arrow:hover {
+    transform: translateX(-50%) scale(1.05);
+    transition-duration: 0.3s;
+}

@@ -1,0 +1,96 @@
+.gallery-header {
+    background-color: white;
+    text-align: right;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    font-size: 20px;
+    color: #151515;
+    padding: 22px 55px ;
+    border: 2px solid rgba(130, 130, 130, 0.205);
+    border-right:none ;
+    border-left:none ;
+}
+.gallery {
+    background-color: white;
+    text-align: center;
+    scroll-margin-top:90px ;
+}
+.gallery .container {
+    max-width: 1250px;
+}
+.gallery .main-img {
+    padding-top: 85px;
+    max-width: 100%;
+}
+.gallery .spot-sec {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+}
+.gallery .spot {
+    text-align: right;
+    width: 500px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6D7280;
+}
+@media(max-width : 900px) {
+    .gallery .spot {
+        font-size: 13px;
+        width: 250px;
+    }
+}
+.gallery .buttons-react .like , .gallery .buttons-react .love {
+    height: 40px;
+    width: 100px;
+    background: #CD1127;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.gallery .buttons-react svg {
+    color: white;
+    padding-right: 10px;
+    margin-bottom: -1px;
+}
+.gallery .buttons-react .love {
+    margin-right: 20px;
+}
+.gallery .other-posts {
+    position: relative;
+    height: 300px;
+    margin-top: 50px;
+}
+.gallery .arrow-right-gallery , .gallery .arrow-left-gallery {
+    position: absolute;
+    font-size: 30px;
+    color: #21272A;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+.gallery .arrow-left-gallery {
+    left: 0px;
+}
+.gallery .arrow-right-gallery {
+    right: 0px;
+}
+.other-posts .gallery-other-imgs {
+    
+    flex-wrap: nowrap;
+    position: relative;
+}
+.other-posts .gallery-other-imgs .cont-slider {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+}
+.other-posts .gallery-other-imgs img {
+    padding: 0 20px;
+}

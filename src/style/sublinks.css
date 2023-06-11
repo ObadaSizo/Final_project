@@ -1,0 +1,40 @@
+.sublinks {
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.474);
+}
+.sub {
+    padding: 32px 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;    
+    color: #21272A;
+    cursor: pointer;
+}
+@media(max-width:900px) {
+    .sub {
+        padding: 34px 10px;
+        font-size: 12px;
+    }
+}
+.sub:hover {
+    color: #D07979;
+    border-bottom: 4px solid #D07979;
+    transition-duration: 0.3s;
+    background-color: #dddddd30;
+
+}
+.sub.active {
+    color: #D07979;
+    border-bottom: 4px solid #D07979;
+}

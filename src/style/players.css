@@ -1,0 +1,151 @@
+.squad {
+    font-family: "Inter";
+    background-color: #fafafa;
+}
+.squad .container{
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line-up {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #5C5C5C;
+}
+.line-up .maneger h3 {
+    text-transform: uppercase;
+    font-weight: 500;   
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.line-up .maneger h4 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 32px;
+}
+.pl {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
+    margin-bottom: 50px;
+    margin-bottom: 24px;
+}
+.pl .pl-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.pl .pl-c .circle {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c5c5c;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    margin: 0 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+} 
+.pl .pl-c .circle-name {
+    font-size: 10px;
+    font-weight: 400;
+    width: 50px;
+}
+.pl-spot {
+    position: relative;
+    background-color: #e8e8e8;
+    padding: 30px 50px;
+    width: 375px;
+    height: 375px;
+}
+.pl-spot h5 {
+    font-weight: 500;
+    font-size: 23px;
+    margin: 0;
+    text-transform: capitalize;
+}
+.pl-spot .position {
+    margin-top: 24px;
+    text-align: start;
+    color: #5C5C5C;
+    text-transform: capitalize;
+}
+.pl-spot .club {
+    color: #8A8A8A;
+    text-align: start;
+    margin-top: 5px;
+    text-transform: capitalize;
+    font-size: 10px;
+}
+.pl-spot .age {
+    text-transform: capitalize;
+    color: #5C5C5C;
+    font-weight: 500;
+    text-align: start;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.pl-spot .number {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+    font-size: 38px;
+    width: 70px;
+    height: 70px;
+    background-color: #CD1127;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.pl-spot .spot-body {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.pl-spot .spot-body .p {
+    background-color: #fafafa;
+    padding: 15px;
+}
+.pl-spot .spot-body span {
+    display: block;
+    margin-top: 53px;
+}
+.para {
+    font-family: "BahijRegular";
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    direction: rtl;
+    column-gap: 50px;
+    text-align: justify;
+    align-items: center;
+    border: 2px solid #CD1127;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+@media(max-width : 999px) {
+    .para {
+        flex-direction: column-reverse;
+        row-gap: 50px;
+    }
+}
+.active-pl {
+    border: 2px solid white;
+    outline: 3px solid #CD1127;
+    /* transition-duration: 0.2s; */
+}

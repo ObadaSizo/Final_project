@@ -1,0 +1,47 @@
+.studies{
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    text-align: justify;
+    background-color: #F5F5F5;
+    direction: rtl;
+    align-items: center;
+}
+.studies .description p{
+    width: 992px;
+    padding-top: 100px;
+}
+.studies h1{
+    width: 100%;
+    background-color: white;
+    text-align: right;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    font-size: 20px;
+    color: #151515;
+    padding: 22px 55px ;
+    border: 2px solid rgba(130, 130, 130, 0.205);
+    border-right:none ;
+    border-left:none ;
+}
+.description{
+    width: 992px;
+    color: #6D7280;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 992px) {
+    .studies{
+        width: 100vw;   
+    }
+    .studies h1{
+    }
+    .studies .description p{
+        width: 70vw;
+        margin: 0px 60px;
+    }
+    .description{
+        margin: 30px 10px;
+    }
+}

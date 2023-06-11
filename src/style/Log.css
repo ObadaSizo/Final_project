@@ -1,0 +1,201 @@
+.log-container {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    width: 1000px;
+    margin-left:auto ;
+    margin-right: auto ;
+    margin-top: 80px;
+    text-align: center;
+    height: calc(100vh - 64px - 80px -  70px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.486);
+} 
+@media(max-width : 900px) {
+    .log-container {
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        margin-top: 0;
+        background-size: contain;
+    }
+}
+.log-container .left-sec-log {
+    width: 350px;
+    border-bottom-right-radius:10px ;
+    border-top-right-radius:10px ;
+    background-image: url("../imgs/signIn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+@media(max-width:900px) {
+    .log-container .left-sec-log {
+        padding: 30px;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+.log-container .left-sec-log::after {
+    border-bottom-right-radius:10px ;
+    border-top-right-radius:10px ;
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.58) 0%, rgba(217, 217, 217, 0) 100%);
+    z-index: 0;
+}
+@media(max-width:900px) {
+    .log-container .left-sec-log::after{
+        border-radius: 0;
+    }
+}
+.log-container .left-sec-log h2 {
+    z-index: 1;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.log-container .left-sec-log p {
+    z-index: 1;
+    width: 250px;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 60px;
+    line-height: 25px;
+}
+.log-container .left-sec-log .trans {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border: 1px solid white;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px 90px;
+    border-radius: 8px;
+    z-index: 1;
+    cursor: pointer;
+}
+.log-container .right-sec-log{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+}
+@media(max-width : 900px) {
+    .log-container .right-sec-log {
+        width: 100%;
+    }
+}
+.log-container .right-sec-log h2 {
+    color: #CD1127;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.log-container .right-sec-log p {
+    color: #6D7280;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.log-container .right-sec-log form {
+    display: flex;
+    flex-direction: column;
+}
+.c {
+    text-align: left;
+    position: relative;
+}
+.log-container .right-sec-log form .c .ch {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    background-color: #6D7280;
+    cursor: pointer;
+}
+.right-sec-log label {
+    margin-top: -10px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #6D7280;
+}
+.c span {
+    position: absolute;
+    right: 0;
+    font-size: 11px;
+    color: #6D7280;
+    bottom: 25px;
+    cursor: pointer;
+}
+.c span:hover {
+    color: #444649;
+}
+.log-container .right-sec-log form input:nth-child(1),.log-container .right-sec-log form input:nth-child(2){
+    padding: 12px;
+    width: 300px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+@media(max-width : 900px) {
+    .right-sec-log p {
+        margin-bottom: 20px;
+    }
+    .log-container .right-sec-log form input:nth-child(1),.log-container .right-sec-log form input:nth-child(2) {
+        width: 250px;
+        margin-bottom: 10px;
+    }
+}
+.log-container .right-sec-log form input:not(:last-child)::placeholder {
+    font-family: "Inter";
+}
+.log-container .right-sec-log form input:last-child {
+    background-color: #CD1127;
+    color: white;
+    border: none;
+    padding: 15px ;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.log-container .links-sign {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+}
+.log-container .links-sign .home-link {
+    font-size: 12px;
+    padding: 10px;
+    color: #6D7280;
+}
+.log-container .home-link:hover {
+    color: #CD1127;
+}
+@media(max-width : 900px) {
+    .log-container .links-sign {
+        bottom: -30px;
+    }
+    .log-container .links-sign .home-link {
+        padding: 5px;
+    }
+}

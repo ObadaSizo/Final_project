@@ -1,0 +1,43 @@
+.prize{
+    width: 100%;
+    direction: rtl;
+    overflow: hidden;
+    z-index: 14;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prize h1 {
+    background-color: white;
+    text-align: right;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    font-size: 20px;
+    color: #151515;
+    padding: 22px 55px ;
+    border: 2px solid rgba(130, 130, 130, 0.205);
+    border-right:none ;
+    border-left:none ;
+}
+.lastline h4{
+    direction: rtl;
+    width: 80vw;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.6px;
+    margin: 10vh 10vw;
+    color: #6D7280;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .prize h1{
+    }
+
+    .lastline h4{
+        width: 80vw;
+        margin: 5vh 10vw;
+    }
+}
